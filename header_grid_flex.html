@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/pictures.css">
+    <link rel="stylesheet" href="style/my_albums.css">
+    <link rel="stylesheet" href="style/text.css">
+    <link rel="stylesheet" href="style/other.css">
+    <link rel="stylesheet" href="style/header_stuff2.css">
+
+
+    <script>
+        let new_albums = []
+        
+
+        function register_score(){
+            let score_box = document.getElementById("Good Kid Mad City Score")
+            let score = score_box.value;
+            window.alert(score)
+
+        
+        }
+        function Add_Album(){
+            let new_album = document.getElementById("Album_Search_Box").value;
+            new_table.append(new_album)
+        }
+
+       
+    </script>
+</head>
+<body style="
+height:3000px;
+">
+ 
+<header class="header">
+    <div class="search_bar_section">
+         <form class="search_bar" >
+        <div ><input class="search_bar_cool" type="text" placeholder="Search"></div>
+         <img class="search_bar_button" src="pictures/search_bar.jpg">
+         <!-- When I make it a button it fucks up the shape? -->
+       </form>
+         </div>
+
+    <div class="header_section">
+
+        <div class="nav_stuff">
+            <li><span><a href="fantasy_website_website.html">Home</a></span></li>
+            <li><span><a href="fantasy_website_website.html">Add Albums</a></span></li>
+            <li><span><a href="about_me.html">About Me</a></span></li>
+            <li><span><a href="fantasy_website_website.html">Other idk</a></span></li>
+            <li><span><a href="about_me.html">Other idk</a></span></li>
+        </div>
+       
+    </div>
+    <div class="profile_section">
+        <img  class="pfp" src="pictures/gkmc.jpg">
+
+    </div>
+</header>
+   
+
+<div>
+    <table border="10" width="100">
+        <tr>
+            <th>Album</th>
+            <th>Artist</th>
+            <th>Average Score</th>
+            <th>Score</th>
+        </tr>
+ 
+        <tr>
+            <td> 
+                <figure><img class="album_pic" src="pictures/about_me_pic.jpg"> 
+                    <figcaption class = "album_caption">Good Kid Mad City</figcaption></figure>  
+             </td>
+            <td>Kanye West</td>
+            <td>7.5</td>
+            <td><select class="select" id="Good Kid Mad City Score" onchange="register_score()">
+                <option disabled selected>Score</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><img class="album_pic" src="pictures/gkmc.jpg"></td>
+            <td>Kanye West</td>
+            <td>7.5</td>
+            <td><select class="select">
+                <option disabled selected>Score</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select></td>
+        </tr>
+      
+    </table>
+</div>
+<div>
+
+</div><input id="Album_Search_Box" type="text" placeholder="Add album">
+<button onclick="Add_Album()">Submit</button>
+
+<div class = "new_table" id = "new_table"></div>
+</body>
+</html>

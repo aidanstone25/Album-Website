@@ -1,0 +1,21 @@
+ .album_pic{
+    
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 600px;
+    border: 5px;
+   border-collapse: collapse;
+   text-align: center;
+   font-weight: bold;
+
+}
+
+.album_caption{
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+.header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 5px white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(41, 45, 48,0.9);
+
+}
+/*how do i make it so when I scroll that shit ain't transparent yknow, but still fixed*/
+
+
+.search_bar_section{
+   flex: 1;
+ 
+}
+
+
+
+.profile_section{
+    width: 150px;
+  
+}
+
+.header_section{
+    width: 850px;
+}
+
+
+header .search_bar_cool{
+    width: 200px;
+    margin-top: 35px;
+    color: white;
+}
+
+.search_bar_button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+    opacity: 50%;
+}
+
+.search_bar{
+    display: flex;
+}
+
+header li{
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 25px;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+header a {
+    color: white;
+    
+}
+.nav_stuff{
+    display: flex;
+    flex-direction: row;
+    
+}

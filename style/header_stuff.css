@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    border-bottom: solid 5px white;
+    position: fixed;
+    top: 0;
+    
+}
+
+header .search_bar_cool{
+    width: 200px;
+    margin-top: 35px;
+    color: white;
+    display: flex;
+}
+/*Would be better to have it in the center, but when I do that line extends, also seems like I gotta order these linearly and space them with padding(which actually probably efficient), whatever get on it stoopid*/
+
+
+
+header li{
+    font-size: 30px;
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+header a {
+    color: white;
+    
+}
+
+.pfp{
+margin-top: 6px;
+margin-left: 90px;
+    
+}
+
+::placeholder{
+    color: white;
+}
+
+.search_bar_button{
+     border-radius: 50%;
+     height: 30px;
+     width: 30px;
+}
+
+.search_bar{
+    display: flex;
+}
